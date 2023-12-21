@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <View
+       android:id="@+id/View"
+       android:layout_width="4dp"
+       android:layout_height="350dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:background="#2448A5"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/View"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rakip"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/View"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="80dp"
+        app:layout_constraintStart_toEndOf="@id/View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:layout_marginTop="12dp"/>
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintEnd_toStartOf="@id/View"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:layout_constraintStart_toEndOf="@id/View"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taş"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".23"
+        android:background="@color/Taş"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/buton2"
+        />
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/buton2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@color/Makas"
+     android:text="Kağıt"
+     android:textColor="#4E342E"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@id/buton3"
+     app:layout_constraintStart_toEndOf="@id/buton1"
+     app:layout_constraintTop_toBottomOf="@id/img1"
+     app:layout_constraintVertical_bias=".23" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makas"
+        app:layout_constraintStart_toEndOf="@id/buton2"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".23"
+        android:textColor="@color/white"
+        android:background="@color/Kağıt"
+        app:layout_constraintEnd_toStartOf="@id/buton4"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıfırla"
+        app:layout_constraintStart_toEndOf="@id/buton3"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".23"
+        android:textColor="@color/white"
+        android:background="@color/Sıfırla"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

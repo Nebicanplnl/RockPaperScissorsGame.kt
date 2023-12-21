@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Taş">#2149C1</color>
+    <color name="Kağıt">#D13838</color>
+    <color name="Makas">#1CB5CF</color>
+    <color name="Sıfırla">#A30EE3</color>
+</resources>
